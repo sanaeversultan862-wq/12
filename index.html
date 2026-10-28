@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информатикадан Эксперттік Тест | /IQ200</title>
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --border-color: #e2e8f0;
+            --success-color: #22c55e;
+            --error-color: #ef4444;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+        }
+
+        .question-card {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .question-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .options-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .options-list li {
+            margin-bottom: 10px;
+        }
+
+        .options-list label {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .options-list label:hover {
+            background: #f1f5f9;
+            border-color: var(--primary-color);
+        }
+
+        .options-list input {
+            margin-right: 12px;
+            accent-color: var(--primary-color);
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-submit:hover {
+            background: #4338ca;
+        }
+
+        #result {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .correct {
+            border-color: var(--success-color) !important;
+            background-color: #f0fdf4 !important;
+        }
+
+        .incorrect {
+            border-color: var(--error-color) !important;
+            background-color: #fef2f2 !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Информатика: Эксперттік Тест</h1>
+    <div class="subtitle">Деңгей: /IQ200 (Күрделілігі жоғары академиялық деңгей)</div>
+
+    <form id="quizForm">
+        <!-- 1 сұрақ -->
+        <div class="question-card" data-question="0">
+            <div class="question-title">1. Асимптотикалық күрделілікті бағалауда алгоритмнің жұмыс уақытының өсу қарқынын анықтайтын "Үлкен О" (Big O) нотациясы бойынша ең төменгі есептеуіш күрделілік қалай өрнектеледі?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q0" value="0"> O(n log n)</label></li>
+                <li><label><input type="radio" name="q0" value="1"> O(1)</label></li>
+                <li><label><input type="radio" name="q0" value="2"> O(n^2)</label></li>
+                <li><label><input type="radio" name="q0" value="3"> O(2^n)</label></li>
+            </ul>
+        </div>
+
+        <!-- 2 сұрақ -->
+        <div class="question-card" data-question="1">
+            <div class="question-title">2. Реляциялық деректер базасындағы (РДБ) кестелер арасындағы «көп-көпке» (Many-to-Many) байланысты жүзеге асыру үшін қандай архитектуралық шешім қолданылады?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q1" value="0"> Сыртқы кілтті (Foreign Key) тікелей екі кестеге де қосу арқылы</label></li>
+                <li><label><input type="radio" name="q1" value="1"> Қосымша байланыстырушы (Junction/Associative) кестені енгізу арқылы</label></li>
+                <li><label><input type="radio" name="q1" value="2"> Бірлік кілтті біріктіру (Union Key) әдісімен</label></li>
+                <li><label><input type="radio" name="q1" value="3"> РДБ-да бұл байланыс түрін жүзеге асыру мүмкін емес</label></li>
+            </ul>
+        </div>
+
+        <!-- 3 сұрақ -->
+        <div class="question-card" data-question="2">
+            <div class="question-title">3. RSA асимметриялық криптографиялық алгоритмінің математикалық беріктігі негізделген негізгі есеп қандай?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q2" value="0"> Дискретті логарифмді есептеу</label></li>
+                <li><label><input type="radio" name="q2" value="1"> Үлкен құрама сандарды жай көбейткіშтерге жіктеу (факторизация)</label></li>
+                <li><label><input type="radio" name="q2" value="2"> Эллиптикалық қисықтардағы нүктелерді қосу</label></li>
+                <li><label><input type="radio" name="q2" value="3"> Симметриялық блоктарды шифрлау матрицасын шешу</label></li>
+            </ul>
+        </div>
+
+        <!-- 4 сұрақ -->
+        <div class="question-card" data-question="3">
+            <div class="question-title">4. Объектіге бағытталған бағдарламалауда (ОББ) бір ата-аналық кластың қасиеттерін әр түрлі класс әдістері арқылы басқаша жүзеге асыру процесі қалай аталады?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q3" value="0"> Инкапсуляция</label></li>
+                <li><label><input type="radio" name="q3" value="1"> Мұрагерлік (Inheritance)</label></li>
+                <li><label><input type="radio" name="q3" value="2"> Полиморфизм</label></li>
+                <li><label><input type="radio" name="q3" value="3"> Абстракция</label></li>
+            </ul>
+        </div>
+
+        <!-- 5 сұрақ -->
+        <div class="question-card" data-question="4">
+            <div class="question-title">5. OSI желілік моделінің қай деңгейінде деректерді маршруттау және логикалық адресация (мысалы, IP адрестер) қамтамасыз етіледі?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q4" value="0"> Физикалық деңгей (Physical layer)</label></li>
+                <li><label><input type="radio" name="q4" value="1"> Арналық деңгей (Data link layer)</label></li>
+                <li><label><input type="radio" name="q4" value="2"> Желілік деңгей (Network layer)</label></li>
+                <li><label><input type="radio" name="q4" value="3"> Көлік деңгейі (Transport layer)</label></li>
+            </ul>
+        </div>
+
+        <!-- 6 сұрақ -->
+        <div class="question-card" data-question="5">
+            <div class="question-title">6. Компьютерлік архитектурадағы фон Нейман принципіне қай компонент кірмейді?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q5" value="0"> Программа мен деректердің бір жадта сақталуы</label></li>
+                <li><label><input type="radio" name="q5" value="1"> Командалар мен деректерге арналған бөлек физикалық жад арналары (Гарвард архитектурасы)</label></li>
+                <li><label><input type="radio" name="q5" value="2"> Арифметикалық-логикалық құрылғы (АЛҚ)</label></li>
+                <li><label><input type="radio" name="q5" value="3"> Басқару құрылғысы (БҚ)</label></li>
+            </ul>
+        </div>
+
+        <!-- 7 сұрақ -->
+        <div class="question-card" data-question="6">
+            <div class="question-title">7. Графтар теориясында Эйлер жолы дегеніміз не?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q6" value="0"> Графтың барлық төбелерін дәл бір рет қамтитын жол</label></li>
+                <li><label><input type="radio" name="q6" value="1"> Графтың барлық қабырғаларын дәл бір рет қамтитын жол</label></li>
+                <li><label><input type="radio" name="q6" value="2"> Ең қысқа қашықтықты іздеу алгоритмі</label></li>
+                <li><label><input type="radio" name="q6" value="3"> Бағытталған циклсіз ағаш құрылымы</label></li>
+            </ul>
+        </div>
+
+        <!-- 8 сұрақ -->
+        <div class="question-card" data-question="7">
+            <div class="question-title">8. Операциялық жүйелерде процесстердің өзара әрекеттесуі кезінде бір ресурсқа бір мезгілде қол жеткізуге байланысты туындайтын қауіпті жағдай қалай аталады?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q7" value="0"> Deadlock (Өлі тұйықталу)</label></li>
+                <li><label><input type="radio" name="q7" value="1"> Segment Fault</label></li>
+                <li><label><input type="radio" name="q7" value="2"> Memory Leak</label></li>
+                <li><label><input type="radio" name="q7" value="3"> Thrashing</label></li>
+            </ul>
+        </div>
+
+        <!-- 9 сұрақ -->
+        <div class="question-card" data-question="8">
+            <div class="question-title">9. Жасанды интеллект және машиналық оқыту саласында деректерді нормализациялау кезінде мәндерді стандартты қалыпқа келтіру үшін жиі қолданылатын функция (сигмоидты функцияның баламасы)?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q8" value="0"> Softmax / ReLU</label></li>
+                <li><label><input type="radio" name="q8" value="1"> Fast Fourier Transform</label></li>
+                <li><label><input type="radio" name="q8" value="2"> Lagrange Interpolation</label></li>
+                <li><label><input type="radio" name="q8" value="3"> Dijkstra Algorithm</label></li>
+            </ul>
+        </div>
+
+        <!-- 10 сұрақ -->
+        <div class="question-card" data-question="9">
+            <div class="question-title">10. Параллель есептеулер теориясында Амдал заңы (Amdahl's law) нені анықтау үшін қолданылады?</div>
+            <ul class="options-list">
+                <li><label><input type="radio" name="q9" value="0"> Процессор жиілігінің қуат тұтынуға тәуелділігін</label></li>
+                <li><label><input type="radio" name="q9" value="1"> Есептеу жүйесі процессорлар санын көбейту арқылы бағдарламаның орындалу жылдамдығын теориялық тұрғыдан қаншалықты арттыра алатынын</label></li>
+                <li><label><input type="radio" name="q9" value="2"> Желідегі пакеттердің жіберілу уақытының кідірісін (latency)</label></li>
+                <li><label><input type="radio" name="q9" value="3"> Қатты дисктердің жазу жылдамдығын оңтайландыруды</label></li>
+            </ul>
+        </div>
+
+        <button type="button" class="btn-submit" onclick="checkAnswers()">Нәтижені тексеру</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    // Дұрыс жауаптардың индекстері (0-ден басталады)
+    const correctAnswers = [1, 1, 1, 2, 2, 1, 1, 0, 0, 1];
+
+    function checkAnswers() {
+        let score = 0;
+        const total = correctAnswers.length;
+
+        for (let i = 0; i < total; i++) {
+            const radios = document.getElementsByName('q' + i);
+            const card = document.querySelector(`[data-question="${i}"]`);
+            let answered = false;
+
+            // Ескі стильдерді тазарту
+            card.classList.remove('correct', 'incorrect');
+
+            for (let j = 0; j < radios.length; j++) {
+                if (radios[j].checked) {
+                    answered = true;
+                    if (parseInt(radios[j].value) === correctAnswers[i]) {
+                        score++;
+                        card.classList.add('correct');
+                    } else {
+                        card.classList.add('incorrect');
+                    }
+                }
+            }
+        }
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `Сіздің нәтижеңіз: ${score} / ${total} (${Math.round((score/total)*100)}%)`;
+        
+        if(score === total) {
+            resultDiv.style.color = "var(--success-color)";
+            resultDiv.innerHTML += "<br>🎉 Керемет! /IQ200 деңгейін толық ақтап шықтыңыз!";
+        } else {
+            resultDiv.style.color = "var(--primary-color)";
+        }
+    }
+</script>
+
+</body>
+</html>
